@@ -1,43 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
-body{
+
+body {
     background-color: black;
     color: aliceblue;
     font-family: monospace;
 }
-h1{
+
+h1 {
     font-size: 3rem;
     margin-bottom: 50px;
 }
-img{
+
+img {
     margin-bottom: 25px;
     margin-right: 20px;
     margin-left: 20px;
 }
-.caja{
+
+.caja {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 0px;
 }
-input{
+
+input {
     background-color: black;
-    color:white;
+    color: white;
     margin-top: 25px;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid white;
 
     font-family: monospace;
     font-size: 1.5rem;
     height: 50px;
-    width:50vh;
+    width: 50vh;
     text-align: center;
 }
-p{
+
+p {
     position: absolute;
     position: absolute;
     top: 380px;
@@ -46,44 +55,52 @@ p{
     width: 150px;
     text-align: center;
 }
-.btn{
+
+.btn {
     border: 1px solid white;
 }
-.btn:active{
+
+.btn:active {
     background-color: rgb(42, 42, 42);
+
 }
 
-h6{
+h6 {
     margin: 25px;
     font-size: 1rem;
-    
-
+    width: 90%;
+    text-align: center;
 }
 
 /*arreglo para apple*/
-@media screen and (max-width:320px ){
-    h1{
+@media screen and (max-width:320px) {
+    h1 {
         font-size: 2rem;
         margin-bottom: 25px;
     }
-    .caja{
+
+    .caja {
         margin-top: 20px;
     }
-    p{
+
+    p {
         top: 250px;
     }
-    img{
+
+    img {
         margin-bottom: 0px;
     }
 
 }
-@media screen and (max-width:480px ){
 
-    h1{
+@media screen and (max-width:480px) {
+
+    h1 {
         font-size: 2rem;
         margin-bottom: 25px;
     }
-    .caja{
+
+    .caja {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,14 +108,17 @@ h6{
 
         overflow: hidden;
     }
-    p{
+
+    p {
         top: 270px;
     }
-    img{
+
+    img {
         margin-bottom: 0px;
     }
-    input{
+
+    input {
         width: 90%;
     }
-    
+
 }
