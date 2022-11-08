@@ -1,4 +1,4 @@
-const boton = document.getElementsByClassName("btn");
+
 const respuestas = [
     "Es cierto",
     "Es decididamente así.",
@@ -22,16 +22,26 @@ const respuestas = [
     "Muy dudoso."
 ];
 
-function res(){
+function question() {
     let introduceTexto = document.getElementById("caja").value;
     let retorno = document.getElementById("retorno");
-    let numRandom = Math.floor(Math.random()*20);
-    if(introduceTexto.length == 0){
-        retorno.textContent ="Preguntame algo"
-    }else{
+    let numRandom = Math.floor(Math.random() * 20);
+
+    if (introduceTexto.length == 0) {
+        retorno.textContent = "Preguntame algo"
+    } else {
         retorno.textContent = respuestas[numRandom];
-    }
+        document.getElementById("btn").style.display = 'none';
+        document.getElementById("btn-res").style.display = '';
+    };
 };
+function reset() {
+    document.getElementById("btn-res").style.display = 'none';
+    document.getElementById("btn").style.display = '';
+    document.getElementById("caja").value = "";
+    document.getElementById("retorno").textContent = "Preguntame algo";
+}
+
 
 
 
