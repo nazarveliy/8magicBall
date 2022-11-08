@@ -2,8 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -webkit-box-align: center;
 }
 body{
     background-color: black;
@@ -63,7 +61,44 @@ h6{
 }
 
 /*arreglo para apple*/
-input, button, select, textarea{
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-};
+@media screen and (max-width:320px ){
+    h1{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .caja{
+        margin-top: 20px;
+    }
+    p{
+        top: 250px;
+    }
+    img{
+        margin-bottom: 0px;
+    }
+
+}
+@media screen and (max-width:480px ){
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .caja{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+
+        overflow: hidden;
+    }
+    p{
+        top: 270px;
+    }
+    img{
+        margin-bottom: 0px;
+    }
+    input{
+        width: 90%;
+    }
+    
+}
